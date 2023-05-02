@@ -1,0 +1,17 @@
+<!-- Interpolar el title del component.ts -->
+<h1 class="display-1">{{title}}</h1>
+
+<div class="container">
+  <form>
+    Numero 1: <input type="text" class="form-control"  [(ngModel)]="numero1" name="numero1"/> <br/> <br/>
+  
+    Numero 2: <input type="text" class="form-control" [(ngModel)]="numero2" name="numero2"/> <br/> <br/>
+  
+    <input type="submit" value="sumar" class="btn btn-primary" (click)="sumar()"> <br/>
+  
+    <input type="submit" value="restar" class="btn btn-secondary" (click)="restar()"> <br/>
+  
+
+    <span>{{resultado}}</span>
+  </form>
+</div>

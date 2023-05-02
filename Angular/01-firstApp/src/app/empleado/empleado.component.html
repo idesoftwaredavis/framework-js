@@ -1,0 +1,32 @@
+
+<div class="user">
+    <div>
+        <p>Nombre del empleado: {{data.nombre}}</p>
+    
+        <p>Apellido del empleado: {{data.apellido}}</p>
+    
+        <p>Edad del empleado : {{data.edad <18 ? "Menor de edad": "Mayor de edad"}}</p>
+    
+        <p>Empresa del empleado : {{data.empresa}}</p>
+    
+        <img src="{{data.foto}}" alt="fotografia">
+
+        <!-- Introduce la empresa : <input type="text" #empresa (keyup)="0" [disabled]="habilitacionCuadro"> -->
+
+        <!-- Introduce la empresa: <input type="text" (input)="cambiaEmpresa($event)"/> -->
+
+        Introduce la empresa: <input type="text" [(ngModel)]="data.empresa"/>
+
+        <br>
+        <br>
+
+       <!-- <input type="button" value="Dale!" (click)="llamaEmpresa(empresa.value)"> -->
+       
+       <!-- Registrado: <input type="checkbox" id="registro" [checked]="usuRegistrado" (click)="setUsuarioRegistrado()"/> -->
+       {{textoDeRegistro}} <br>
+       Registrado: <input type="radio" value="si" name="nRegistro" id="registro" [checked]="usuRegistrado" (click)="setUsuarioRegistrado($event)"/> <br>
+       No registrado: <input type="radio" value="no" name="nRegistro" id="registro" (click)="setUsuarioRegistrado($event)"/>
+
+        {{getRegistroUsuario()}}
+    </div>    
+</div>

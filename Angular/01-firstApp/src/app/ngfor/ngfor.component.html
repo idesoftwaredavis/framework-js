@@ -1,0 +1,23 @@
+<p>
+  ngfor works!
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th scope="col">#<th>
+      <th scope="col">tipo</th>
+      <th scope="col">nombre</th>
+      <th scope="col">edad</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let animal of animales; index as i">
+      <th>{{i+1}}</th>
+      <th>{{animal.tipo}}</th>
+      <th>{{animal.nombre}}</th>
+      <th>{{animal.edad}}</th>
+    </tr>
+  </tbody>
+</table>

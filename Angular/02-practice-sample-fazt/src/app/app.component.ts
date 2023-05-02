@@ -1,0 +1,12 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title = '02-practice-sample-fazt';
+  users = ['davis','malcolm','ryan'];
+  activated = false;
+}

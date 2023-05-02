@@ -1,0 +1,8 @@
+.user{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border:1px solid gray;
+    margin:4em;
+    
+}
